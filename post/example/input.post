@@ -15,7 +15,7 @@ plot_tec_index_skip:  1  # Output File TIme Step Index Skip Size
 --------------
 # Input Info #
 --------------
-input_data_path: WRK/solution/extracts/planes/bin/
+input_data_path: WRK/
 input_format: "dg4est"  # [TODO]
 
 extract_start_index: 0  # extract starting id, .e.g. dg4est_extract000_<?>.bin --> 0

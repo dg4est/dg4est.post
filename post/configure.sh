@@ -342,7 +342,7 @@ ln -sf ${COMPILE_BUILD_POST_DIRECTORY}/bin
 cp example/input.post ${COMPILE_BUILD_POST_DIRECTORY}/bin/.
 cp example/PostFlow.omp ${COMPILE_BUILD_POST_DIRECTORY}/bin/.
 cp -r example/tec.templates ${COMPILE_BUILD_POST_DIRECTORY}/bin/.
-ln -sf ${PROJECT_ROOT}/example/WRK ${COMPILE_BUILD_POST_DIRECTORY}/bin/WRK
+ln -sf ${PROJECT_ROOT}/example/data ${COMPILE_BUILD_POST_DIRECTORY}/bin/WRK
 
 echo
 echo "================================================"
