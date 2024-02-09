@@ -38,6 +38,7 @@ include_directories($ENV{OCCA_DIR}/include)
 
 set(SRC
     src/analysis_read_inputs.cxx
+    src/analysis_binary2ascii.cxx
     src/analysis_temporal_mean.cxx
     src/analysis_reynolds_stresses.cxx
     src/analysis_les_subgridscales.cxx

@@ -29,8 +29,8 @@ file_index_skip:     1  # interval between file indices
 ------------
 # Analysis #
 ------------
-analysis_type: 1  # Analysis Options:
-		  #   [0] [TODO] Binary-to-Ascii Solution
+analysis_type: 0  # Analysis Options:
+		  #   [0] Binary-to-Ascii Format Conversion
                   #   [1] Temporal Mean
                   #   [2] Reynolds Stresses
                   #   [3] LES SGS Kinetic Energy

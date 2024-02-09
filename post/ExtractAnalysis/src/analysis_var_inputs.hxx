@@ -67,6 +67,7 @@ char PODVAR_NAMES[MAX_NPODVAR][BUFF_SIZE] = {
 };
 
 typedef enum {
+  BINARY2ASCII      = 0, /**< convert binary data to ascii format */
   ANALYSIS_MEAN     = 1, /**< temporal mean analysis */
   ANALYSIS_REYNOLDS = 2, /**< Reynolds stress analsis */
   ANALYSIS_LES_SGS  = 3, /**< LES SGS mesh resolution analysis */

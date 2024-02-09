@@ -8,6 +8,7 @@
 /* header files */
 #include "analysis_var_inputs.hxx"
 #include "analysis_read_inputs.hxx"
+#include "analysis_binary2ascii.hxx"
 #include "analysis_temporal_mean.hxx"
 #include "analysis_reynolds_stresses.hxx"
 #include "analysis_les_subgridscales.hxx"
@@ -19,6 +20,7 @@ int main(int argc,char **argv) {
     inputs_t *data = read_inputs(argc,argv);
 
     switch(data->analysis_type){
+        case(BINARY2ASCII):      binary2ascii(data); break;
         case(ANALYSIS_MEAN):     temporal_mean(data,1); break;
         case(ANALYSIS_REYNOLDS): reynolds_stresses(data,1); break;
         case(ANALYSIS_LES_SGS):  les_subgridscales(data,1); break;

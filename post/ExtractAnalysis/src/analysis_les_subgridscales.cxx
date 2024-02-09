@@ -1,5 +1,5 @@
 /**
- * \file    analysis_les_subgridscales.c
+ * \file    analysis_les_subgridscales.cxx
  * \ingroup utils_group
  * \author  akirby
  *

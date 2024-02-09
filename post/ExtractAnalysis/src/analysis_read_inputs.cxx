@@ -63,7 +63,7 @@ inputs_t* read_inputs(int argc,char **argv){
     /* analysis info */
     if(!analysis_read) find_keyword_integer(data->input_file,"analysis_type:",&data->analysis_type,REQUIRED);
     find_keyword_integer(data->input_file,"average_multiple_extracts:",&data->multiple_extract_mean,OPTIONAL);
-    find_keyword_integer(data->input_file,"transform_Cartesian2Polar:",&data->Cartesian2Polar,OPTIONAL);
+    find_keyword_integer(data->input_file,"transform_Cart2Polar:",&data->Cartesian2Polar,OPTIONAL);
 
     /* POD variables */
     data->npod = 0;
