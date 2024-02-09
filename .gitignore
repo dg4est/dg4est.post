@@ -1,0 +1,11 @@
+*.o
+*.lo
+*.mod
+*.so
+*.a
+bin
+install
+builds
+GENERATED_DOCS
+buildW
+.vscode

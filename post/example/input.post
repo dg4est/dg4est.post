@@ -1,0 +1,49 @@
+===============================================================================
+#                       DG4EST EXTRACT ANALYSIS INPUTS                        #
+===============================================================================
+---------------
+# Output Info #
+---------------
+output_format:  1        # Analysis Output File Format:
+                         #   [1] ascii only (tecplot)
+                         #   [2] binary only (analysis)
+                   	 #   [3] both formats
+plot_tec_start_index: 0  # Output File Time Step Start Index
+plot_tec_end_index: 100  # Output File Time Step End Index
+plot_tec_index_skip:  1  # Output File TIme Step Index Skip Size
+
+--------------
+# Input Info #
+--------------
+input_data_path: WRK/solution/extracts/planes/bin/
+input_format: "dg4est"  # [TODO]
+
+extract_start_index: 0  # extract starting id, .e.g. dg4est_extract000_<?>.bin --> 0
+extract_end_index:   0  # extract ending id,   .e.g. dg4est_extract005_<?>.bin --> 5
+extract_index_skip:  1  # interval between extract indices
+
+file_start_index:    0  # file starting id, e.g. dg4est_extract<?>_0000000.bin --> 0
+file_end_index:    100  # file ending id,   e.g. dg4est_extract<?>_0000100.bin --> 100
+file_index_skip:     1  # interval between file indices
+
+------------
+# Analysis #
+------------
+analysis_type: 1  # Analysis Options:
+		  #   [0] [TODO] Binary-to-Ascii Solution
+                  #   [1] Temporal Mean
+                  #   [2] Reynolds Stresses
+                  #   [3] LES SGS Kinetic Energy
+                  #   [4] POD/PCA Traditional
+                  #   [5] POD/PCA Snapshot
+average_multiple_extracts: 0  # Combine and average multiples extracts: e.g. radial averaging
+transform_Cart2Polar: 0       # [TODO] Perform coordinate transformation flag
+
+POD_vars: "rho,u,v,p"  # POD Field Options:
+                         #  [rho] fluid density
+                         #  [u,v,w] x/y/z-velocity components
+                         #  [p] fluid pressure
+POD_nmode: 10            # POD Number of reconstruction modes (<1 set to all)
+POD_plot_nmode: 10       # POD Number of plot modes
+POD_plot_ROM: 1          # POD plot reduce order model flag: [0] OFF, [1] ON
+POD_plot_TVC: 0          # POD Number of time-varying coefficients plot modes

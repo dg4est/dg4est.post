@@ -1,0 +1,2 @@
+#!/bin/bash
+export OMP_NUM_THREADS=$1; ./PostFlow.exe input.post $2

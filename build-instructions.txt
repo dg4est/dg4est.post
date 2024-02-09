@@ -1,0 +1,37 @@
+=======================
+OCCA BUILD INSTRUCTIONS
+=======================
+  # move into occa directory
+  cd occa
+
+  # configure cmake and build
+  CC=mpicc CXX=mpic++ FC=mpif90 ./configure-cmake.sh
+
+  # >>> NOTE: you may need to edit configure-cmake.sh to enable/disable DEVICE MODES
+    
+  # build and install occa
+  cd build
+  make -j4 install
+
+
+=======================
+BLAS INSTALLATION LINUX (requires sudo access)
+=======================
+sudo apt-get install libopenblas-dev
+
+============================
+POST.FLOW BUILD INSTRUCTIONS
+============================
+  # cd to project directory
+  cd post
+
+  # configure and build
+  ./configure.sh
+
+  # execute program
+  cd builds/exe_release/bin
+  ./PostFlow.exe input.post
+
+  # TO REBUILD
+  cd builds/exe_release
+  make install
