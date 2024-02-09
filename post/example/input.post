@@ -7,7 +7,7 @@
 output_format:  1        # Analysis Output File Format:
                          #   [1] ascii only (tecplot)
                          #   [2] binary only (analysis)
-                   	 #   [3] both formats
+                         #   [3] both formats
 plot_tec_start_index: 0  # Output File Time Step Start Index
 plot_tec_end_index: 100  # Output File Time Step End Index
 plot_tec_index_skip:  1  # Output File TIme Step Index Skip Size
@@ -30,7 +30,7 @@ file_index_skip:     1  # interval between file indices
 # Analysis #
 ------------
 analysis_type: 0  # Analysis Options:
-		  #   [0] Binary-to-Ascii Format Conversion
+                  #   [0] Binary-to-Ascii Format Conversion
                   #   [1] Temporal Mean
                   #   [2] Reynolds Stresses
                   #   [3] LES SGS Kinetic Energy
@@ -39,7 +39,7 @@ analysis_type: 0  # Analysis Options:
 average_multiple_extracts: 0  # Combine and average multiples extracts: e.g. radial averaging
 transform_Cart2Polar: 0       # [TODO] Perform coordinate transformation flag
 
-POD_vars: "rho,u,v,p"  # POD Field Options:
+POD_vars: "rho,u,v,p"    # POD Field Options:
                          #  [rho] fluid density
                          #  [u,v,w] x/y/z-velocity components
                          #  [p] fluid pressure
