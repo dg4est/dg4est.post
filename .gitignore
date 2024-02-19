@@ -3,7 +3,6 @@
 *.mod
 *.so
 *.a
-bin
 install
 builds
 GENERATED_DOCS
