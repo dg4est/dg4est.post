@@ -82,7 +82,7 @@ void pod_snapshot(inputs_t *data,char standalone){
 
     /* 3. display wall-clock times */
     printf("+============================================+\n");
-    printf(" [POD TRAD] Performance Statistics\n"
+    printf(" [POD SNAP] Performance Statistics\n"
            "  Matrix Dimensions:\n"
            "              fields = %d\n"
            "     spatial samples = %d\n"
